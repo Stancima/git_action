@@ -16,4 +16,6 @@ jobs:
       - name: multi string
         run: |
 
-         run: npm -v
+         run: echo "I am rich"
+
+         run: echo "in Jesus name"
