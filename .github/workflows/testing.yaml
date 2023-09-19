@@ -15,5 +15,5 @@ jobs:
 
      - name: multi string
        run: |
-         run: node - v
-         run: npm - v
+         run: node -v
+         run: npm -v
