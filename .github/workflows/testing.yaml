@@ -13,9 +13,8 @@ jobs:
       - name: echo string
         run: echo "Jesus is Lord"
 
-      - name: multi string
-        run: |
+      
 
-         run: echo "I am rich"
+       
 
-         run: echo "in Jesus name"
+         
