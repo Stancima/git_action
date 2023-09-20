@@ -1,4 +1,25 @@
-name: shell commands
+name: "terraform"
 
-On: push
+on: [push]
+
+jobs:
+  terraform:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.1.9
+      - name: initialize
+        run: terraform initialize
+      - name: validate
+        run: terraform validate
+      - name: plan
+        run: terraform plan
+
+
 
