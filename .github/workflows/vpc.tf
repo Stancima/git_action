@@ -13,7 +13,7 @@ terraform {
 # Provider Block
 provider "aws" {
   profile = "default"
-  region  = "us-west-2"
+  region  = "default"
 }
 
 # Resource Block
@@ -22,3 +22,5 @@ resource "aws_vpc" "project1vpc" {
     cidr_block = "10.0.0.0/24"
     tags = {
         Name = "FirstVPC"
+    }
+}

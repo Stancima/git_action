@@ -19,7 +19,7 @@ jobs:
       - name: terraform validate
         run: terraform validate
       - name: terraform plan
-        run: terraform plan -destroy
+        run: terraform plan 
 
 
 
